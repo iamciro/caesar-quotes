@@ -1,5 +1,6 @@
+from flask import render_template
 from caesar import app
 
 @app.route('/')
 def home():
-    return "<h1>Hello world</h1>"
+    return render_template('index.html')
