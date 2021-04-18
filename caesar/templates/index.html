@@ -39,7 +39,8 @@
                         onclick="location.reload();">
                     <strong>Generate other</strong>
                 </button>
-                <button class="btn btn-primary mt-5 round">
+                <button id="copyBtn" class="btn btn-primary mt-5 round"
+                        data-clipboard-text="{{ quote }}">
                     <strong>Copy</strong>
                 </button>
             </div>
@@ -50,6 +51,12 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='clipboard/js/clipboard.min.js') }}"></script>
+
+    <script>
+        var btn = document.getElementById('copyBtn');
+        var clipboard = new ClipboardJS(btn);
+    </script>
 
   </body>
 </html>
