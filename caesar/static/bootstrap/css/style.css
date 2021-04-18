@@ -1,0 +1,38 @@
+.bg-header{
+    background-color: #48899E;
+}
+
+header{
+    height: 300px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+    h1{
+        float: right;
+        margin-top: -300px !important;
+    }
+    
+    p{
+        text-align: left;
+        margin-left: 325px;
+        font-size: 23px;
+        margin-top: -200px !important;
+    }
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    h1{
+        float: right;
+        margin-top: -300px !important;
+    }
+    p{
+        text-align: left;
+        margin-left: 325px;
+        font-size: 23px;
+        margin-top: -200px !important;
+    }
+ }

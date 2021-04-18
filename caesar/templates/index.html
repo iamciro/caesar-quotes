@@ -7,12 +7,25 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/style.css') }}">
     
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
+    <header class="bg-header">
+        <div class="row w-100">
+            <div class="col-md-3 col-12"></div>
+            <div class="col-md-5">
+                <img class="img-fluid" 
+                src="{{ url_for('static', filename='img/caesar.png') }}" 
+                alt="Julius Caesar"
+                width="55%">
+                <h1 class="text-light mt-md-5">Julius Caesar</h1>
+                <p class="text-light">Quotes generator</p>
+            </div>
+        </div>
+    </header>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
