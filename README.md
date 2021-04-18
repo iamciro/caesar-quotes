@@ -9,6 +9,6 @@ Julius Caesar's quotes is the implementation of the Caesar API (see [this repo](
 
 ## Live demo
 
-If you want to see a live demo of this project, please go to the following link, [Julius Caesar's Quotes](https://caesar-quotes.herokuapp.com/).
+If you want to see a live demo of this project, please go to the following link: [Julius Caesar's Quotes](https://caesar-quotes.herokuapp.com/).
 
 Any recommendation will be accepted :)
