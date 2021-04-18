@@ -15,7 +15,7 @@ header{
         margin-top: -300px !important;
     }
     
-    p{
+    .quote-gn-text{
         text-align: left;
         margin-left: 325px;
         font-size: 23px;
@@ -30,7 +30,7 @@ header{
         float: right;
         margin-top: -300px !important;
     }
-    p{
+    .quote-gn-text{
         text-align: left;
         margin-left: 325px;
         font-size: 23px;
