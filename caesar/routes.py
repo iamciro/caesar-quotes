@@ -5,4 +5,7 @@ from .utils import get_quote
 @app.route('/')
 def home():
     quote = get_quote()
-    return render_template('index.html', quote=quote)
+    if quote:
+        return render_template('index.html', quote=quote)
+    return render_template('index.html', quote=None)
+        
