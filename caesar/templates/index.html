@@ -28,19 +28,23 @@
     </header>
 
     <div class="container mt-5 text-center">
-        <div class="quote">
-            <p class="display-6">
-                "{{ quote }}"
-            </p>
-        </div>
-        <div class="buttons text-center">
-            <button class="btn btn-primary mt-5 round">
-                <strong>Generate other</strong>
-            </button>
-            <button class="btn btn-primary mt-5 round">
-                <strong>Copy</strong>
-            </button>
-        </div>
+        {% if quote %}
+            <div class="quote">
+                <p class="display-6">
+                    "{{ quote }}"
+                </p>
+            </div>
+            <div class="buttons text-center">
+                <button class="btn btn-primary mt-5 round">
+                    <strong>Generate other</strong>
+                </button>
+                <button class="btn btn-primary mt-5 round">
+                    <strong>Copy</strong>
+                </button>
+            </div>
+        {% else %}
+            <p class="display-6">Error while getting quotes.</p>
+        {% endif %}
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
